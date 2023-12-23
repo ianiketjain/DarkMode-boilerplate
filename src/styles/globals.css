@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.example_container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.theme-light {
+  --background-color: theme("colors.light.background");
+  --text-color: theme("colors.light.text");
+  --A_div_bg : theme("colors.light.A_div_bg")
+  --B_div_bg : theme("colors.light.B_div_bg")
+  --C_div_bg : theme("colors.light.C_div_bg")
+}
+
+.theme-dark {
+  --background-color: theme("colors.dark.background");
+  --text-color: theme("colors.dark.text");
+  --A_div_bg : theme("colors.dark.A_div_bg")
+  --B_div_bg : theme("colors.dark.B_div_bg")
+  --C_div_bg : theme("colors.dark.C_div_bg")
+}
